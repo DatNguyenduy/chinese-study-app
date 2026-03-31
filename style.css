@@ -30,6 +30,7 @@ header h1 {
     color: white;
 }
 
+/* Card container */
 .card {
     background: white;
     padding: 20px;
@@ -38,16 +39,92 @@ header h1 {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* =========================
+   VOCABULARY
+========================= */
+
+.vocab-item {
+    position: relative;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    background: #fafafa;
+    transition: 0.2s;
+}
+
+.vocab-item:hover {
+    background: #e8f5e9;
+    transform: scale(1.02);
+}
+
+.hanzi {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.pinyin {
+    color: gray;
+}
+
+.meaning {
+    margin-top: 5px;
+}
+
+/* 🔊 Sound button */
+.sound-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sound-btn:hover {
+    background: #45a049;
+    transform: scale(1.1);
+}
+
+/* =========================
+   QUIZ
+========================= */
+
+.quiz-card {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 28px;
+}
+
+/* Answer buttons */
 .option {
-    display: block;
     width: 100%;
     padding: 12px;
     margin: 8px 0;
     border-radius: 10px;
     border: none;
     background: #e0e0e0;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .option:hover {
-    background: #d4ffd4;
+    background: #c8e6c9;
+    transform: scale(1.02);
+}
+
+/* =========================
+   MOBILE TOUCH FEEDBACK
+========================= */
+
+button:active {
+    transform: scale(0.95);
 }
