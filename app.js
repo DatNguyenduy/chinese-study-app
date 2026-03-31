@@ -1,7 +1,4 @@
 let data = {};
-
-let data = {};
-
 async function loadData() {
     try {
         let res = await fetch("data.json");
