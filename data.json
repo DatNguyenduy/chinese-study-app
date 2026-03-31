@@ -1,20 +1,16 @@
 {
   "title": "Week 2 - Introduction",
   "vocabulary": [
-    { "word": "wǒ", "meaning": "I" },
-    { "word": "nǐ", "meaning": "you" },
-    { "word": "tā", "meaning": "he/she" }
+    { "hanzi": "我", "pinyin": "wǒ", "meaning": "I" },
+    { "hanzi": "你", "pinyin": "nǐ", "meaning": "you" },
+    { "hanzi": "他", "pinyin": "tā", "meaning": "he" }
   ],
   "quiz": [
     {
-      "question": "wǒ",
+      "question": "我",
+      "pinyin": "wǒ",
       "options": ["I", "You", "He", "We"],
       "answer": 0
-    },
-    {
-      "question": "nǐ",
-      "options": ["I", "You", "He", "They"],
-      "answer": 1
     }
   ]
 }
