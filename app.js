@@ -1,6 +1,15 @@
 let current = 0;
 let score = 0;
+let data = {};
 
+async function loadData() {
+    let res = await fetch("data.json");
+    data = await res.json();
+
+    document.getElementById("weekTitle").innerText = data.title;
+}
+
+loadData();
 function showVocab() {
     let html = "<h2>Vocabulary</h2>";
 
