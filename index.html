@@ -2,18 +2,24 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Chinese Study App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Study</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <h1>Chinese Study - Week 2</h1>
+<div class="app">
+    <header>
+        <h1>Chinese Study</h1>
+        <p id="weekTitle">Week 2</p>
+    </header>
 
-    <button onclick="showVocab()">Vocabulary</button>
-    <button onclick="startQuiz()">Start Quiz</button>
+    <div class="menu">
+        <button onclick="showVocab()">📘 Vocabulary</button>
+        <button onclick="startQuiz()">🎮 Quiz</button>
+    </div>
 
-    <div id="content"></div>
+    <div id="content" class="card"></div>
 </div>
 
 <script src="app.js"></script>
