@@ -3,13 +3,25 @@ let data = {};
 let data = {};
 
 async function loadData() {
-    let res = await fetch("data.json");
-    data = await res.json();
+    try {
+        let res = await fetch("data.json");
 
-    document.getElementById("weekTitle").innerText = data.title;
+        if (!res.ok) {
+            throw new Error("Cannot load data.json");
+        }
 
-    // Enable buttons after data is ready
-    document.querySelectorAll("button").forEach(btn => btn.disabled = false);
+        data = await res.json();
+
+        document.getElementById("weekTitle").innerText = data.title;
+
+        // Enable buttons
+        document.querySelectorAll("button").forEach(btn => btn.disabled = false);
+
+    } catch (err) {
+        console.error(err);
+        document.getElementById("content").innerHTML =
+            "<p style='color:red;'>❌ Failed to load data</p>";
+    }
 }
 
 // Disable buttons initially
