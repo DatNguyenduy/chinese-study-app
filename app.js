@@ -26,7 +26,9 @@ async function loadData() {
 
 // Disable buttons initially
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+    document.getElementById("btnVocab").disabled = true;
+    document.getElementById("btnQuiz").disabled = true;
+
     loadData();
 });
 
