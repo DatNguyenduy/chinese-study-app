@@ -1,0 +1,20 @@
+{
+  "title": "Week 2 - Introduction",
+  "vocabulary": [
+    { "word": "wǒ", "meaning": "I" },
+    { "word": "nǐ", "meaning": "you" },
+    { "word": "tā", "meaning": "he/she" }
+  ],
+  "quiz": [
+    {
+      "question": "wǒ",
+      "options": ["I", "You", "He", "We"],
+      "answer": 0
+    },
+    {
+      "question": "nǐ",
+      "options": ["I", "You", "He", "They"],
+      "answer": 1
+    }
+  ]
+}
