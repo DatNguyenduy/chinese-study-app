@@ -58,7 +58,7 @@ function showVocab() {
 }
 
 function speakWord(index) {
-    speak(data.vocabulary[index].hanzi); // ✅ use hanzi
+    speak(data.vocabulary[index].hanzi); // ✅ correct field
 }
 
 function startQuiz() {
