@@ -45,11 +45,12 @@ function showVocab() {
 
     data.vocabulary.forEach((v, i) => {
         html += `
-        <div onclick="speakWord(${i})">
-            <p style="font-size:24px;"><b>${v.hanzi}</b></p>
-            <p>${v.pinyin}</p>
-            <p>${v.meaning}</p>
-            <hr>
+        <div class="vocab-item">
+            <p class="hanzi">${v.hanzi}</p>
+            <p class="pinyin">${v.pinyin}</p>
+            <p class="meaning">${v.meaning}</p>
+
+            <button class="sound-btn" onclick="speakWord(${i})">🔊</button>
         </div>
         `;
     });
@@ -71,8 +72,11 @@ function showQuestion() {
     let q = data.quiz[current];
 
     let html = `
-        <h2 onclick="speak('${q.question}')">${q.question} 🔊</h2>
-        <p>${q.pinyin}</p>
+        <div class="quiz-card">
+            <h2 class="question">${q.question}</h2>
+            <button class="sound-btn" onclick="speak('${q.question}')">🔊</button>
+            <p class="pinyin">${q.pinyin}</p>
+        </div>
     `;
 
     q.options.forEach((opt, index) => {
